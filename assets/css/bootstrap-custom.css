@@ -1,0 +1,101 @@
+/*main*/
+body {
+	background-color: rgba(244, 246, 252, 1);
+	background-image: url("assets/images/swirl_pattern.png");
+	background-repeat: repeat;
+}
+
+.container {
+	max-width: 960px;
+}
+
+.well {
+	box-shadow: rgba(0, 0, 0, 0.3) -2px 2px 6px 0px;
+	border: 1px rgba(90, 125, 124, 1) solid;
+	border-radius: 0;
+}
+
+h2, h3, figcaption, .navbar-brand {
+	font-family: 'Kaushan Script', cursive;
+}
+
+a, p, footer, form {
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+}
+
+/*header*/
+.navbar {
+	box-shadow: rgba(0, 0, 0, 0.3) -2px 2px 6px 0px;
+	border-bottom: 2px rgba(90, 125, 124, 1) solid;
+}
+
+.navbar-default .navbar-brand {
+	height: 90px;
+	padding: 35px 15px;
+	font-size: 70px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	background-color: rgba(230, 97, 107, 1);
+	color: rgba(230, 97, 107, .7);
+	border-right: 2px rgba(90, 125, 124, 1) solid;
+	border-left: 2px rgba(90, 125, 124, 1) solid;
+	transition: 1s ease;
+}
+
+.navbar-brand:hover {
+	border-color: transparent;
+}
+
+nav {
+	margin: 20px 0;
+	font-size: 16px;
+}
+
+/*social icons*/
+.nav-justified>li {
+	width: 0px;
+}
+
+.nav-justified>li>a {
+	padding: 10px 5px;
+}
+
+/*content area*/
+h2, h3 {
+	padding-bottom: 20px;
+	border-bottom: 2px rgba(83, 62, 45, 1) solid;
+	color: rgba(230, 97, 107, 1);
+}
+
+p {
+	line-height: 25px;
+}
+
+.img-thumbnail {
+	margin: 0 10px 10px 0;
+	box-shadow: rgba(0, 0, 0, 0.3) -2px 2px 6px 0px;
+}
+
+
+/*general*/
+.shadow {
+  text-shadow:  1px -1px 0 rgba(255,255,255,0.3),
+  				2px -2px 0 rgba(255,255,255,0.2),
+  				-1px 1px 0 rgba(0, 0, 0, 0.9),
+		  		-2px 2px 0 rgba(0, 0, 0, 0.8),
+	            -3px 3px 0 rgba(0, 0, 0, 0.7),
+                -4px 4px 0 rgba(126,53,59, 0.5),
+                -5px 5px 0 rgba(126,53,59, 0.4),
+                -6px 6px 0 rgba(126,53,59, 0.35),
+                -7px 7px 0 rgba(126,53,59, 0.30),
+                -8px 8px 0 rgba(126,53,59, 0.25),
+                -9px 9px 0 rgba(126,53,59, 0.20),
+                -10px 10px 0 rgba(126,53,59, 0.15),
+                -11px 11px 0 rgba(126,53,59, 0.10),
+                -12px 12px 0 rgba(126,53,59, 0.05);
+}
+
+.shadow-small {
+	text-shadow: -1px 1px 0 rgba(0,0,0,0.4);
+}
