@@ -2,48 +2,65 @@
 <html lang="en-us">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contact Me - Aaron Gaither</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-custom.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans" >
 </head>
 <body>
-	<header id="topbar">
-		<div class="container">
-			<h1 id="logo" class="shadow">Aaron Gaither</h1>
+	<header class="navbar navbar-default navbar-style">
+		<div class="container max-width">
+			<a class="navbar-brand logo shadow" href="index.html">Aaron Gaither</a>
 			<nav>
-				<ul>
+				<ul class="nav navbar-nav navbar-right nav-style">
 					<li><a href="index.html">About</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a class="current" href="">Contact</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<div class="container main">
-		<section class="clear">
-			<header>
-				<h2 class="shadow-small">Contact</h2>
-			</header>
-			<form>
-				<label for="name">Name</label>
-	    		<input type="text" name="name" placeholder="John Smith">
-	    		<label for="email">Email</label>
-	  			<input type="email" name="email" placeholder="example@gmail.com">
-	  			<label for="comment">Comment</label>
-	  			<textarea name="comment" rows="6"></textarea>
-				<input type="submit" value="Submit">
-			</form>
-		</section>
-		<aside>
-			<header>
-				<h2 class="shadow-small">Connect with Me</h2>
-			</header>
-			<ul>
-				<li class="media-link"><a href="https://github.com/aarongaither" target="_blank"><img src="assets/images/github_shadow.svg" alt="GitHub"/></a></li>
-				<li class="media-link"><a href="https://www.linkedin.com/in/aaron-gaither/" target="_blank"><img src="assets/images/linkedin_shadow.svg" alt="LinkedIn"/></a></li>
-				<li class="media-link"><a href="http://stackoverflow.com/users/7560301/aaron-gaither" target="_blank"><img src="assets/images/so_shadow.svg" alt="StackOverflow"/></a></li>
-			</ul>
-		</aside>
+	<div class="container max-width">
+		<div class="row">
+			<section class="col-sm-8 well content">
+				<header>
+					<h2 class="shadow-small">Contact</h2>
+				</header>
+				<form>
+					<div class="form-group">
+						<label for="name">Name</label>
+			    		<input type="text" class="form-control" name="name" placeholder="John Smith">
+			    	</div>
+			    	<div class="form-group">
+			    		<label for="email">Email</label>
+			  			<input type="email" class="form-control" name="email" placeholder="example@gmail.com">
+			  		</div>
+			  		<div class="form-group">
+			  			<label for="comment">Comment</label>
+		  				<textarea name="comment" class="form-control" rows="6"></textarea>
+					</div>
+					<input type="submit" value="Submit">
+				</form>
+			</section>
+			<aside class="col-sm-3 well content col-sm-offset-1">
+				<header>
+					<h3 class="shadow-small">Connect with Me</h3>
+				</header>
+				<ul class="nav nav-pills nav-justified">
+					<li class="nav-social"><a class="social-link" href="https://github.com/aarongaither" target="_blank"><img src="assets/images/github_shadow.svg" alt="GitHub"/></a></li>
+					<li class="nav-social"><a class="social-link" href="https://www.linkedin.com/in/aaron-gaither/" target="_blank"><img src="assets/images/linkedin_shadow.svg" alt="LinkedIn"/></a></li>
+					<li class="nav-social"><a class="social-link" href="http://stackoverflow.com/users/7560301/aaron-gaither" target="_blank"><img src="assets/images/so_shadow.svg" alt="StackOverflow"/></a></li>
+				</ul>
+			</aside>
+		</div>
 	</div>
-	<footer class="clear">&copy;Copyright 2017 Aaron Gaither</footer>
+	<footer>
+		<div class="container">
+			<p class="text-center">&copy;Copyright 2017 Aaron Gaither</p>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

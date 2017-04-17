@@ -1,21 +1,32 @@
 /*main*/
-body {
-	background-color: rgba(244, 246, 252, 1);
-	background-image: url("assets/images/swirl_pattern.png");
-	background-repeat: repeat;
+* {
+	transition: 1s ease;
 }
 
-.container {
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+body {
+	background-color: rgba(244, 246, 252, 1);
+	background-image: url("../images/swirl_pattern.png");
+	background-repeat: repeat;
+	margin-bottom: 60px;
+}
+
+.max-width {
 	max-width: 960px;
 }
 
-.well {
+.content {
 	box-shadow: rgba(0, 0, 0, 0.3) -2px 2px 6px 0px;
 	border: 1px rgba(90, 125, 124, 1) solid;
 	border-radius: 0;
 }
 
-h2, h3, figcaption, .navbar-brand {
+h2, h3, figcaption, .logo {
 	font-family: 'Kaushan Script', cursive;
 }
 
@@ -25,12 +36,25 @@ a, p, footer, form {
 }
 
 /*header*/
-.navbar {
+.navbar-default .navbar-nav>li>a:hover {
+	color: rgba(244, 246, 252, 1);
+	background-color: rgba(230, 97, 107, 1);
+}
+
+.navbar li {
+	border-right: 1px rgba(83, 62, 45, 1) solid;
+}
+
+.navbar li:last-child {
+	border-right: none;
+}
+
+.navbar-default {
 	box-shadow: rgba(0, 0, 0, 0.3) -2px 2px 6px 0px;
 	border-bottom: 2px rgba(90, 125, 124, 1) solid;
 }
 
-.navbar-default .navbar-brand {
+.navbar .navbar-brand {
 	height: 90px;
 	padding: 35px 15px;
 	font-size: 70px;
@@ -47,18 +71,38 @@ a, p, footer, form {
 	border-color: transparent;
 }
 
-nav {
+.nav-style {
 	margin: 20px 0;
 	font-size: 16px;
 }
 
 /*social icons*/
-.nav-justified>li {
+.nav>.nav-social {
 	width: 0px;
 }
 
-.nav-justified>li>a {
+.nav>.nav-social>.social-link {
 	padding: 10px 5px;
+}
+
+li a img {
+	position: relative;
+}
+
+li a img:hover {
+	animation: jiggle .2s ease 0s 2;
+}
+
+@keyframes jiggle {
+    0% {
+    top: 0;
+  }
+  50% {
+    top: 5px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 /*content area*/
@@ -72,11 +116,53 @@ p {
 	line-height: 25px;
 }
 
-.img-thumbnail {
+.profile-pic {
 	margin: 0 10px 10px 0;
 	box-shadow: rgba(0, 0, 0, 0.3) -2px 2px 6px 0px;
 }
 
+/*portfolio*/
+.row-margin {
+	margin-bottom: 20px;
+}
+
+figure {
+	position: relative;
+}
+
+figure img {
+	transition: 1s ease;
+}
+
+figure img:hover {
+	opacity: 0.5;
+}
+
+figcaption {
+	position: absolute;
+	text-align: center;
+	bottom: 10px;
+	width: 100%;
+	padding: 15px 0;
+	color: rgba(244, 246, 252, 1);
+	background-color: rgba(230, 97, 107, 1);
+	z-index: 1;
+}
+
+figcaption:hover + img {
+	opacity: 0.5;
+}
+
+/*footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(35, 44, 51, 1);
+	border-top: rgba(230, 97, 107, 1) 10px solid;
+	color: rgba(244, 246, 252, 1);
+}
 
 /*general*/
 .shadow {
@@ -98,4 +184,46 @@ p {
 
 .shadow-small {
 	text-shadow: -1px 1px 0 rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: 992px) {
+	.navbar .navbar-brand {
+		font-size: 50px;
+	}
+
+	.social-link>img {
+		width: 40px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar .navbar-brand {
+		width: 100%;
+		border-color: transparent;
+		text-align: center;
+	}
+
+	.nav-justified > li {
+	  display: table-cell;
+	  width: 1%;
+	}
+
+	.social-link>img {
+		width: 48px;
+	}
+
+	.navbar-right > li {
+	  display: table-cell;
+	  width: 1%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.navbar .navbar-brand {
+		font-size: 30px;
+	}
 }
