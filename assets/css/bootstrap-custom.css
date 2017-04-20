@@ -1,8 +1,4 @@
 /*main*/
-* {
-	transition: 1s ease;
-}
-
 html {
   position: relative;
   min-height: 100%;
@@ -64,11 +60,11 @@ a, p, footer, form {
 	color: rgba(230, 97, 107, .7);
 	border-right: 2px rgba(90, 125, 124, 1) solid;
 	border-left: 2px rgba(90, 125, 124, 1) solid;
-	transition: 1s ease;
 }
 
-.navbar-brand:hover {
-	border-color: transparent;
+.navbar-default .navbar-brand:hover {
+	background-color: rgba(230, 97, 107, 1);
+	color: rgba(230, 97, 107, .7);
 }
 
 .nav-style {
@@ -205,6 +201,10 @@ footer {
 		width: 100%;
 		border-color: transparent;
 		text-align: center;
+	}
+
+	.container {
+		padding: 0;
 	}
 
 	.nav-justified > li {
